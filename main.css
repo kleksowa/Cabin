@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  background-color: #f6e9bb;
+}
+
+h1,
+h2 {
+  color: #ebab00;
+  mix-blend-mode: color-dodge;
+}
+
+h1 {
+  font-size: 6rem;
+  padding: 3% 0;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.up-nav {
+  position: fixed;
+  width: 100%;
+  height: 10rem;
+  top: 0;
+  text-align: right;
+  color: #ebab00;
+  font-size: 1.3rem;
+  z-index: 5;
+}
+
+.up-nav .up-nav_links {
+  list-style-type: none;
+}
+
+.up-nav .up-nav_links .nav-link {
+  display: inline-block;
+  padding: 3%;
+  transition: 0.3s ease;
+}
+
+.up-nav .up-nav_links .nav-link:hover {
+  transform: scale(1.2);
+  color: #df760b;
+}
+
+section {
+  width: 100%;
+}
+
+section .main-header {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+
+#home {
+  background: linear-gradient(0deg, rgba(245, 153, 0, 0.3), rgba(245, 153, 0, 0.3)), url(img/cabin2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.polygon {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(235, 171, 0, 0.3) 0%, rgba(235, 171, 0, 0.5) 100%);
+  clip-path: polygon(0 0, 11% 0, 65% 100%, 0% 100%);
+}
+
+#features,
+#rooms {
+  text-align: center;
+  background-color: white;
+  padding: 5% 0;
+}
+
+.card-heading {
+  color: #422a18;
+  margin: 1rem 0;
+  padding: 3%;
+  letter-spacing: 1.3px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  width: 30%;
+  margin-top: 4rem;
+}
+
+.card .card-image {
+  border-radius: 50%;
+  max-width: 50%;
+  object-fit: contain;
+  box-shadow: 0px 0px 3px 5px #905930;
+}
+
+.card .card-text {
+  margin-top: 1rem;
+  line-height: 1.5;
+  width: 70%;
+  margin: 0 auto;
+  color: #694124;
+  padding: 5%;
+}
+
+.features-container {
+  width: 30vw;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.f-row {
+  padding: 3% 0;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.f-left {
+  width: 30%;
+  color: #694124;
+  display: inline-block;
+  text-align: left;
+}
+
+.f-right {
+  width: 70%;
+  display: inline-block;
+  color: #7a7a7a;
+  padding: 0 0 0 5%;
+  text-align: right;
+}
+
+#contact,
+footer {
+  background-color: #f6e9bb;
+}
+
+.contact-container {
+  line-height: 1.5;
+  width: 50%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.contact-container p:last-child {
+  letter-spacing: 3px;
+}
+
+.contact-container .contact-image {
+  max-width: 20%;
+  object-fit: contain;
+}
+
+.address {
+  color: #422a18;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+}
+
+footer {
+  text-align: center;
+  color: #7a7a7a;
+  padding: 3%;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+  .card-container .card-image {
+    max-width: 50%;
+  }
+  .card-container .card {
+    width: 80%;
+  }
+  .features-container {
+    width: 60%;
+  }
+  .contact-container {
+    margin: 10% auto;
+  }
+  .address {
+    font-size: 2rem;
+  }
+  .up-nav {
+    background-color: #422a18;
+    height: auto;
+  }
+  .up-nav .up-nav_links {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .up-nav .up-nav_links .nav-link {
+    padding: 1.5rem 1rem;
+  }
+  #contact {
+    scroll-margin-top: 7rem;
+  }
+}
